@@ -1,7 +1,7 @@
 local r,g,b,a = 255, 255, 255, 255
 
 RegisterCommand("crosshair", function(source, args, raw)
-    if args ~= nil then
+    if args[1] ~= nil then
         if args[1] == "red" then
             r,g,b,a = 255, 0, 0, 255
         elseif args[1] == "blue" then
@@ -14,7 +14,7 @@ RegisterCommand("crosshair", function(source, args, raw)
             r,g,b,a = 255, 255, 255, 255
         end
     else
-        TriggerEvent("chatMessage", "[Crosshair]" , {255, 0, 0} , "/crosshair r g b a")
+        TriggerEvent("chatMessage", "[Crosshair]" , {255, 0, 0} , "Invalid Arguments ( /crosshair red, blue, green, yellow, white )")
     end
 end)
 
