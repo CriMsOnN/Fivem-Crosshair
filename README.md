@@ -5,7 +5,6 @@
 ![Image](https://imgur.com/O2qRZ7w.png)
 
 ## Commands
-##
     * /crosshair red, green, blue, yellow, white
     
     
