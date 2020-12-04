@@ -27,7 +27,7 @@ Citizen.CreateThread(function()
         end
         if Config.EnableCustomCrosshair then
             if IsPlayerFreeAiming(PlayerId()) and IsPedArmed(GetPlayerPed(-1), 7) and IsPedArmed(GetPlayerPed(-1), 4) then
-                -- checked if player is aiming also if player is unarmerd or holding
+                -- checked if player is aiming also if player is unarmed or holding explosives, melee
                 DrawRect(0.5, 0.495, 0.001, 0.010, r, g, b, a) -- top
                 DrawRect(0.5, 0.510, 0.001, 0.010, r, g, b, a) -- bottom
                 DrawRect(0.495, 0.5021, 0.006, 0.002, r, g, b, a) -- left
